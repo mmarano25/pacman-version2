@@ -1,0 +1,16 @@
+ghosts 
+	if ghost within distance, remove their direction from legal moveset. pick random available move. if adjacent move, pick it instead.
+		perhaps if towards food prioritize?
+food 
+	seek closest food. pick direction towards food
+corners
+	if no ghosts and no food around, seek each corner subsequently. make a looping list?
+	e.g. for nw corner, if n or w in legal moves, pick it. if not, then pick a random move.
+
+
+functions to make: 
+	direction(my_coord, dest_coord) -> SNWE
+	backwardsDirection(SNWE) -> SNWE
+
+
+
